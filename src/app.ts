@@ -1,7 +1,7 @@
 // TUTO : https://earthly.dev/blog/cicd-build-github-action-dockerhub/
 
 // Import the necessary packages:
-const express = require('express');
+import express from "express";
 
 // Define the express instance and the port for the application:
 const app = express();
@@ -14,5 +14,6 @@ app.get('/',(req,res) => {
 });
 
 // Start the application:
-app.listen(PORT, () => console.log(`App listening on port ${PORT} `));
-
+app.listen(PORT, () => {
+  console.log("App listening on port" + PORT)
+});
